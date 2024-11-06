@@ -748,6 +748,7 @@ public class ResidentController {
             @RequestHeader(name = "locale", required = false) String locale)
 			throws ResidentServiceCheckedException, ApisResourceAccessException {
 		logger.debug("ResidentController::getuserinfo()::entry");
+		logger.debug("inside user info");
 		ResponseWrapper<UserInfoDto> userInfoDto = new ResponseWrapper<>();
 		try {
 			validator.validateProfileApiRequest(languageCode);
