@@ -216,6 +216,12 @@ public class IdentityServiceTest {
 		when(utility.getMappingValue(Mockito.anyMap(), Mockito.anyString())).thenReturn("1970/11/16");
 		when(utility.getCachedIdentityData(Mockito.any(), Mockito.any(), Mockito.any())).thenReturn(idResponseDTO1);
 		when(utility.getIdentityData(Mockito.any(), Mockito.any())).thenReturn(idResponseDTO1);
+
+		Map<String, Object> identityMappingMap = new HashMap<>();
+		Map<String, String> valueMap = new HashMap<>();
+		valueMap.put("value", "fullName");
+		identityMappingMap.put("name", valueMap);
+		when(residentConfigService.getIdentityMappingMap()).thenReturn(identityMappingMap);
 	}
 
 	private void fileLoadMethod() throws Exception {
