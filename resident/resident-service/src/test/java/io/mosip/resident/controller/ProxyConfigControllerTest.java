@@ -1,9 +1,12 @@
 package io.mosip.resident.controller;
 
+import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.security.PrivateKey;
 import java.security.PublicKey;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.crypto.SecretKey;
 
@@ -99,6 +102,11 @@ public class ProxyConfigControllerTest {
 		MockitoAnnotations.initMocks(this);
 		this.mockMvc = MockMvcBuilders.standaloneSetup(proxyConfigController).build();
 		Mockito.doNothing().when(auditUtil).setAuditRequestDto(Mockito.any());
+		Map<String, Object> identityMappingMap = new HashMap<>();
+		Map<String, String> valueMap = new HashMap<>();
+		valueMap.put("value", "fullName");
+		identityMappingMap.put("name", valueMap);
+		when(residentConfigService.getIdentityMappingMap()).thenReturn(identityMappingMap);
 	}
 
 	@Test
