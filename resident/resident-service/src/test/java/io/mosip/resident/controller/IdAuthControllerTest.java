@@ -2,8 +2,10 @@ package io.mosip.resident.controller;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import java.io.IOException;
 import java.util.Map;
 
+import io.mosip.resident.exception.ResidentServiceCheckedException;
 import io.mosip.resident.util.Utility;
 import org.junit.Before;
 import org.junit.Test;
@@ -92,7 +94,7 @@ public class IdAuthControllerTest {
 	private RequestWrapper<IdAuthRequestDto> requestWrapper;
 
 	@Before
-	public void setUp() {
+	public void setUp() throws ResidentServiceCheckedException, IOException {
 		MockitoAnnotations.initMocks(this);
 		this.mockMvc = MockMvcBuilders.standaloneSetup(idAuthController).build();
 		requestWrapper = new RequestWrapper<IdAuthRequestDto>();

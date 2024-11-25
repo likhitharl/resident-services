@@ -23,6 +23,7 @@ import io.mosip.resident.util.Utility;
 import io.mosip.resident.validator.RequestValidator;
 import reactor.util.function.Tuple2;
 import reactor.util.function.Tuples;
+import io.mosip.resident.constant.RegistrationConstants;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -30,7 +31,6 @@ import org.springframework.core.env.Environment;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
@@ -148,16 +148,16 @@ public class IdentityServiceImpl implements IdentityService {
 		return identityDTO;
 	}
 
-	public String getFullName(Map<String, Object> identity, String langCode) throws ResidentServiceCheckedException, IOException {
-		if(nameValueList==null){
-			nameValueList= getNameValueFromIdentityMapping();
+	public String getFullName(Map<String, Object> identity, String langCode)
+			throws ResidentServiceCheckedException, IOException {
+		if (nameValueList == null) {
+			nameValueList = getNameValueFromIdentityMapping();
 		}
-		StringBuilder nameValue = new StringBuilder();
-		for (String nameString : nameValueList) {
-			nameValue.append(getValueFromIdentityMapping(nameString, identity, langCode));
-		}
-		return String.valueOf(nameValue);
+		return nameValueList.stream()
+				.map(nameString -> getValueFromIdentityMapping(nameString, identity, langCode))
+				.collect(Collectors.joining(RegistrationConstants.SPACE));
 	}
+
 
 	private String getValueFromIdentityMapping(String nameString, Map<String, Object> identity, String langCode) {
 		if (nameString == null || identity == null || langCode == null) {
@@ -206,6 +206,7 @@ public class IdentityServiceImpl implements IdentityService {
 		}
 		return nameValueList;
 	}
+
 	
 	@Override
 	public Map<String, Object> getIdentityAttributes(String id, String schemaType) throws ResidentServiceCheckedException, IOException {
