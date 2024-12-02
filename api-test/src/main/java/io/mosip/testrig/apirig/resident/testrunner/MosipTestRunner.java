@@ -95,6 +95,7 @@ public class MosipTestRunner {
 			KeycloakUserManager.removeUser();
 			KeycloakUserManager.createUsers();
 			KeycloakUserManager.closeKeycloakInstance();
+			AdminTestUtil.getRequiredField();
 
 			AdminTestUtil.getRegistrationCenterData();
 			AdminTestUtil.getLocationDataWithLocationCode(BaseTestCase.locationCode);
