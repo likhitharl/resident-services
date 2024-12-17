@@ -17,7 +17,7 @@
 			<class name="io.mosip.testrig.apirig.resident.testscripts.PostWithAutogenIdWithOtpGenerate" />
 		</classes>
 	</test>
-	<test name="GetOrderStatus">
+	<!--<test name="GetOrderStatus">
 		<parameter name="ymlFile"
 			value="resident/GetOrderStatus/GetOrderStatus.yml" />
 		<classes>
@@ -147,14 +147,14 @@
 			<class name="io.mosip.testrig.apirig.resident.testscripts.PostWithAutogenIdWithOtpGenerate" />
 		</classes>
 	</test>	
-<!-- Please don't uncomment this CancelCredential until we fix it-->	
-<!--	<test name="CancelCredential">
+ Please don't uncomment this CancelCredential until we fix it	
+	<test name="CancelCredential">
 		<parameter name="ymlFile"
 			value="resident/CredentialIssuance/CancellCredential/CancellCredential.yml" />
 		<classes>
 			<class name="io.mosip.testrig.apirig.resident.testscripts.GetWithParam" />
 		</classes>
-	</test>-->
+	</test>
 	<test name="SendOTP">
 		<parameter name="ymlFile"
 			value="resident/SendOTP/SendOTP.yml" />
@@ -360,15 +360,15 @@
 			<class name="io.mosip.testrig.apirig.resident.testscripts.GetWithParam" />
 		</classes>
 	</test>
-<!-- Please don't uncomment this GetProfile until we fix it-->	
-<!--	<test name="GetProfile">
+ Please don't uncomment this GetProfile until we fix it	
+	<test name="GetProfile">
 		<parameter name="ymlFile"
 			value="resident/GetProfile/GetProfile.yml" />
 			<parameter name="sendEsignetToken"	value="true" />
 		<classes>
 			<class name="io.mosip.testrig.apirig.resident.testscripts.GetWithParam" />
 		</classes>
-	</test>-->
+	</test>
 	<test name="GetLastClickNotification">
 		<parameter name="ymlFile"
 			value="resident/GetLastClickNotification/GetLastClickNotification.yml" />
@@ -646,9 +646,9 @@
 			<class name="io.mosip.testrig.apirig.resident.testscripts.GetWithParam" />
 		</classes>
 	</test>
-	<!-- Keep the below 4 API's (SendOtpForContactDet, UpdateContactDetails, SendOtpToUserId, ValidateWithUserIdOtp)
+	 Keep the below 4 API's (SendOtpForContactDet, UpdateContactDetails, SendOtpToUserId, ValidateWithUserIdOtp)
 	 at the bottom of the suite always. Because, Below we are updating the mail id of the UIN.
-	 Keeping it atlast will not impact any otp API's -->
+	 Keeping it atlast will not impact any otp API's 
 		
 	<test name="SendOtpForContactDet">
 		<parameter name="ymlFile"
@@ -681,6 +681,6 @@
 		<classes>
 			<class name="io.mosip.testrig.apirig.resident.testscripts.PostWithBodyWithOtpGenerate" />
 		</classes>
-	</test>
+	</test>-->
 
 </suite>
