@@ -8,7 +8,6 @@
 		<listener class-name="io.mosip.testrig.apirig.report.EmailableReport"/>
 	</listeners>
 		
- 
 	<test name="GenerateVID">
 		<parameter name="ymlFile"
 			value="resident/GenerateVID/createGenerateVID.yml" />
