@@ -103,6 +103,8 @@ public class SimplePostForAutoGenId extends AdminTestUtil implements ITest {
 		String inputJson = "";
 
 		inputJson = getJsonFromTemplate(testCaseDTO.getInput(), testCaseDTO.getInputTemplate());
+		
+		inputJson = ResidentUtil.inputstringKeyWordHandeler(inputJson, testCaseName);
 
 		String outputJson = getJsonFromTemplate(testCaseDTO.getOutput(), testCaseDTO.getOutputTemplate());
 
