@@ -545,7 +545,7 @@ public class ResidentServiceImpl implements ResidentService {
 			RegProcRePrintRequestDto rePrintReq = new RegProcRePrintRequestDto();
 			rePrintReq.setCardType(dto.getCardType());
 			rePrintReq.setCenterId(centerId);
-			rePrintReq.setMachineId(machineId);
+			rePrintReq.setMachineId(getMachineId());
 			rePrintReq.setId(dto.getIndividualId());
 			rePrintReq.setIdType(dto.getIndividualIdType());
 			rePrintReq.setReason("resident");
@@ -862,20 +862,11 @@ public class ResidentServiceImpl implements ResidentService {
 				logger.debug(AuditEnum.VALIDATE_OTP_SUCCESS.getDescription(), dto.getTransactionID());
 			}
 
-			final String publicKey = getPublicKeyFromKeyManager();
-			MachineSearchResponseDTO machineSearchResponseDTO = searchMachineInMasterService(residentMachinePrefix,
-					publicKey);
-			String machineId = getMachineId(machineSearchResponseDTO, publicKey);
-			if (machineId == null) {
-				machineId = createNewMachineInMasterService(residentMachinePrefix, machineSpecId, zoneCode, centerId,
-						publicKey);
-			}
-
 			ResidentUpdateDto regProcReqUpdateDto = new ResidentUpdateDto();
 			regProcReqUpdateDto.setIdValue(dto.getIndividualId());
 			regProcReqUpdateDto.setIdType(ResidentIndividialIDType.valueOf(dto.getIndividualIdType().toUpperCase()));
 			regProcReqUpdateDto.setCenterId(centerId);
-			regProcReqUpdateDto.setMachineId(machineId);
+			regProcReqUpdateDto.setMachineId(getMachineId());
 			JSONObject jsonObject = new JSONObject();
 			jsonObject.put(IDENTITY, demographicIdentity);
 			String encodedIdentityJson = CryptoUtil.encodeToURLSafeBase64(jsonObject.toJSONString().getBytes());
@@ -1078,6 +1069,41 @@ public class ResidentServiceImpl implements ResidentService {
 		logger.debug("ResidentServiceImpl::reqUinUpdate()::exit");
 		return Tuples.of(responseDto, eventId);
 	}
+
+	private String getMachineId() throws ApisResourceAccessException {
+		final String publicKey = getPublicKeyFromKeyManager();
+		MachineSearchResponseDTO machineSearchResponseDTO = searchMachineInMasterService(residentMachinePrefix,
+				publicKey);
+		String machineId = getMachineIdIfExists(machineSearchResponseDTO, publicKey);
+		if (machineId == null) {
+			machineId = createNewMachineInMasterService(residentMachinePrefix, machineSpecId, zoneCode, centerId,
+					publicKey);
+		}
+		//activateMachineId(machineId);
+		return machineId;
+	}
+
+//	private void activateMachineId(String machineId) {
+//
+//		try {
+//
+//			machineSearchResponseDTO = residentServiceRestClient.postApi(env.getProperty(ApiName.MACHINESEARCH.name()),
+//					MediaType.APPLICATION_JSON, httpEntity, MachineSearchResponseDTO.class);
+//			logger.debug(LoggerFileConstant.SESSIONID.toString(), LoggerFileConstant.USERID.toString(),
+//					residentMachinePrefix,
+//					"ResidentServiceImpl::reqUinUpdate():: MACHINESEARCH POST service call ended with response data "
+//							+ machineSearchResponseDTO.toString());
+//			if (machineSearchResponseDTO.getErrors() != null && !machineSearchResponseDTO.getErrors().isEmpty()) {
+//				throw new ResidentMachineServiceException(machineSearchResponseDTO.getErrors().get(0).getErrorCode(),
+//						machineSearchResponseDTO.getErrors().get(0).getMessage());
+//			}
+//		} catch (Exception e) {
+//			logger.error(LoggerFileConstant.SESSIONID.toString(), LoggerFileConstant.USERID.toString(),
+//					residentMachinePrefix, "ResidentServiceImpl::reqUinUpdate():: MACHINESEARCH POST service call"
+//							+ ExceptionUtils.getStackTrace(e));
+//			throw new ApisResourceAccessException("Could not fetch machines from master data", e);
+//		}
+//	}
 
 	private void sendFailureNotification(ResidentTransactionEntity residentTransactionEntity, ResidentUpdateRequestDto dto, JSONObject idRepoJson) throws ResidentServiceCheckedException {
 		if (Utility.isSecureSession()) {
@@ -1369,7 +1395,7 @@ public class ResidentServiceImpl implements ResidentService {
 		return machineSearchResponseDTO;
 	}
 
-	private String getMachineId(MachineSearchResponseDTO machineSearchResponseDTO, final String publicKey) {
+	private String getMachineIdIfExists(MachineSearchResponseDTO machineSearchResponseDTO, final String publicKey) {
 		if (machineSearchResponseDTO.getResponse() != null) {
 			List<MachineDto> fetchedMachines = machineSearchResponseDTO.getResponse().getData();
 			if (fetchedMachines != null && !fetchedMachines.isEmpty()) {
