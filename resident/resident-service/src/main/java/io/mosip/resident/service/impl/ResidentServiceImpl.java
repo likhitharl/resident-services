@@ -111,6 +111,7 @@ import io.mosip.resident.service.IdAuthService;
 import io.mosip.resident.service.NotificationService;
 import io.mosip.resident.service.PartnerService;
 import io.mosip.resident.service.ResidentService;
+import org.springframework.web.util.UriComponentsBuilder;
 import reactor.util.function.Tuple2;
 import reactor.util.function.Tuples;
 
@@ -1038,12 +1039,18 @@ public class ResidentServiceImpl implements ResidentService {
 	}
 
 	private void activateMachineId(String machineId) throws ApisResourceAccessException {
-
 		try {
+			String baseUrl = env.getProperty(ApiName.MACHINEUPDATE.name());
+
+			String apiUrl = UriComponentsBuilder.fromHttpUrl(baseUrl)
+					.queryParam("id", machineId)
+					.queryParam("isActive", true)
+					.toUriString();
+
 			ResponseWrapper<StatusResponseDto> response =
-					residentServiceRestClient.patchApi(env.getProperty(ApiName.MACHINESEARCH.name())
-							, MediaType.APPLICATION_JSON, null,
-					ResponseWrapper.class);
+					residentServiceRestClient.patchApi(apiUrl, MediaType.APPLICATION_JSON, null,
+							ResponseWrapper.class);
+
 			if (response.getErrors() != null && !response.getErrors().isEmpty()) {
 				throw new ResidentMachineServiceException(response.getErrors().get(0).getErrorCode(),
 						response.getErrors().get(0).getMessage());
@@ -1052,9 +1059,10 @@ public class ResidentServiceImpl implements ResidentService {
 			logger.error(LoggerFileConstant.SESSIONID.toString(), LoggerFileConstant.USERID.toString(),
 					residentMachinePrefix, "ResidentServiceImpl::reqUinUpdate():: activateMachineId Patch service call"
 							+ ExceptionUtils.getStackTrace(e));
-			throw new ApisResourceAccessException("Could not active machines in master data", e);
+			throw new ApisResourceAccessException("Could not activate machines in master data", e);
 		}
 	}
+
 
 	private void sendFailureNotification(ResidentTransactionEntity residentTransactionEntity, ResidentUpdateRequestDto dto, JSONObject idRepoJson) throws ResidentServiceCheckedException {
 		if (Utility.isSecureSession()) {
