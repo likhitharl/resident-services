@@ -1040,7 +1040,7 @@ public class ResidentServiceImpl implements ResidentService {
 
 	private void activateMachineId(String machineId) throws ApisResourceAccessException {
 		try {
-			String baseUrl = env.getProperty(ApiName.MACHINEUPDATE.name());
+			String baseUrl = env.getProperty(ApiName.MACHINESTATUSUPDATE.name());
 
 			String apiUrl = UriComponentsBuilder.fromHttpUrl(baseUrl)
 					.queryParam("id", machineId)
