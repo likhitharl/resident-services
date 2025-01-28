@@ -1015,6 +1015,9 @@ public class ResidentServiceImpl implements ResidentService {
 				if (residentTransactionEntity.getRequestSummary() == null) {
 					residentTransactionEntity.setRequestSummary("failed");
 				}
+				if(residentTransactionEntity.getRequestSummary().equalsIgnoreCase("failed")){
+					residentTransactionEntity.setStatusCode(EventStatusFailure.FAILED.name());
+				}
 				residentTransactionRepository.save(residentTransactionEntity);
 			}
 		}
