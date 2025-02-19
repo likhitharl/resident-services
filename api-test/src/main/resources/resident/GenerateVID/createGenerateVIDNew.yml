@@ -9,7 +9,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/GenerateVID/createGenerateVIDNewResult
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -28,7 +27,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/GenerateVID/createGenerateVIDNewResult
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -47,7 +45,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/GenerateVID/createGenerateVIDNewResult
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -66,7 +63,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNewAsPhone
       outputTemplate: resident/GenerateVID/createGenerateVIDNewResult
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -85,7 +81,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNewAsEmail
       outputTemplate: resident/GenerateVID/createGenerateVIDNewResult
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -105,37 +100,12 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/GenerateVID/createGenerateVIDNewResult
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
         "vidType": "Perpetual"
     }'
       output: '{
-}'
-
-   Resident_Generate_Perpetual_VID_uin_Empty_TransID_Invalid_Neg:
-      endPoint: /resident/v1/generate-vid
-      uniqueIdentifier: TC_Resident_GenerateVID_100
-      description: Generate perpetual VID using a valid UIN with an empty transactionId
-      role: residentNew
-      restMethod: post
-      inputTemplate: resident/GenerateVID/createGenerateVIDNew
-      outputTemplate: resident/error
-      input: '{
-        "transactionID": "",
-        "requesttime": "$TIMESTAMP$",
-        "id": "mosip.resident.vid.generate",
-        "version": "1.0",
-        "vidType": "Perpetual"
-    }'
-      output: '{
-      "errors": [
-    {
-      "errorCode": "RES-SER-513",
-      "message": "$IGNORE$"
-    }
-  ]
 }'
 
    Resident_Generate_Perpetual_VID_uin_Empty_requesttime_Invalid_Neg:
@@ -147,7 +117,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -171,7 +140,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "",
         "version": "1.0",
@@ -195,7 +163,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "",
@@ -219,7 +186,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -245,7 +211,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "23553265",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -269,7 +234,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "khdfnsld",
         "version": "1.0",
@@ -293,7 +257,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "tt",
@@ -317,7 +280,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -342,7 +304,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/GenerateVID/createGenerateVIDNewResult
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -360,7 +321,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -385,7 +345,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/GenerateVID/createGenerateVIDNewResult
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -403,7 +362,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "tt@2165;",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -427,7 +385,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNewAsEmpty
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -451,7 +408,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -475,7 +431,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -499,7 +454,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "",
         "version": "1.0",
@@ -523,7 +477,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "",
@@ -547,7 +500,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -573,7 +525,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "23553265",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
@@ -597,7 +548,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "khdfnsld",
         "version": "1.0",
@@ -621,7 +571,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "tt",
@@ -645,7 +594,6 @@ GenerateVIDNew:
       inputTemplate: resident/GenerateVID/createGenerateVIDNew
       outputTemplate: resident/error
       input: '{
-        "transactionID": "$TRANSACTIONID$",
         "requesttime": "$TIMESTAMP$",
         "id": "mosip.resident.vid.generate",
         "version": "1.0",
