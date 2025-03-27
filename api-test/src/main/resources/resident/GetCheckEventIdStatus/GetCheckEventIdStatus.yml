@@ -120,3 +120,25 @@ GetCheckEventIdStatus:
     }
   ]
 }'
+
+   Resident_GetCheckEventIdStatus_uin_Without_eventId_Neg:
+      endPoint: /resident/v1/?langCode={langCode}
+      uniqueIdentifier: TC_Resident_GetEventIdStatus_07
+      description: Get check eventId status using a valid UIN without eventId
+      role: residentNew
+      checkErrorsOnlyInResponse: true
+      restMethod: get
+      inputTemplate: resident/GetCheckEventIdStatus/GetCheckEventIdStatus
+      outputTemplate: resident/error
+      input: '{
+      	"eventId": "$REMOVE$",
+		"langCode": "$1STLANG$"
+}'
+      output: '{
+        "errors": [
+    {
+      "errorCode": "RES-SER-418",
+      "message": "$IGNORE$"
+    }
+  ]
+}'
