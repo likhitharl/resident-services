@@ -126,13 +126,12 @@ GetCheckEventIdStatus:
       uniqueIdentifier: TC_Resident_GetEventIdStatus_07
       description: Get check eventId status using a valid UIN without eventId
       role: residentNew
-      checkErrorsOnlyInResponse: true
       restMethod: get
       inputTemplate: resident/GetCheckEventIdStatus/GetCheckEventIdStatus
       outputTemplate: resident/error
       input: '{
-      	"eventId": "$REMOVE$",
-		"langCode": "$1STLANG$"
+       "eventId": "$REMOVE$",
+        "langCode": "$1STLANG$"
 }'
       output: '{
         "errors": [

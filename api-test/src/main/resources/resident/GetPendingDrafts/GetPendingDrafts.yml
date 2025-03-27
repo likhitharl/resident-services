@@ -13,12 +13,11 @@ GetPendingDrafts:
 }'
       output: '{
 }'
-   Resident_GetPendingDrafts__Invalid_langCode_eng_Smoke:
+   Resident_GetPendingDrafts__Invalid_langCode_eng_Smoke_Neg:
       endPoint: /resident/v1/identity/get-pending-drafts/{langcode}
       uniqueIdentifier: TC_Resident_GetPendingDrafts_02
       description: Get Pending drafts list with invalid langCode
       role: residentNew
-      checkErrorsOnlyInResponse: true
       restMethod: get
       inputTemplate: resident/GetPendingDrafts/GetPendingDrafts
       outputTemplate: resident/error
