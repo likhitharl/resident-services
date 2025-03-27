@@ -131,7 +131,7 @@ GetCheckEventIdStatus:
       outputTemplate: resident/error
       input: '{
        "eventId": "$REMOVE$",
-        "langCode": "$1STLANG$"
+       "langCode": "$1STLANG$"
 }'
       output: '{
         "errors": [
