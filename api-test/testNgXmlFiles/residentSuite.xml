@@ -682,5 +682,14 @@
 			<class name="io.mosip.testrig.apirig.resident.testscripts.PostWithBodyWithOtpGenerate" />
 		</classes>
 	</test>
+		<test name="GetPendingDrafts">
+		<parameter name="ymlFile"
+			value="resident/GetPendingDrafts/GetPendingDrafts.yml" />
+		<classes>
+			<class
+				name="io.mosip.testrig.apirig.resident.testscripts.GetWithParam" />
+			<parameter name="sendEsignetToken" value="true" />
+		</classes>
+	</test>
 
 </suite>
