@@ -2,10 +2,10 @@ package io.mosip.resident.service.impl;
 
 import static io.mosip.resident.constant.RegistrationConstants.SUCCESS;
 
-import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.UUID;
 
+import io.mosip.resident.exception.NoSuchAlgorithmException;
 import io.mosip.resident.util.AvailableClaimValueUtility;
 import io.mosip.resident.util.Utility;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,7 +51,7 @@ public class GrievanceServiceImpl implements GrievanceService {
     private Utility utility;
 
     @Override
-    public ResponseWrapper<Object> getGrievanceTicket(MainRequestDTO<GrievanceRequestDTO> grievanceRequestDTOMainRequestDTO) throws ApisResourceAccessException {
+    public ResponseWrapper<Object> getGrievanceTicket(MainRequestDTO<GrievanceRequestDTO> grievanceRequestDTOMainRequestDTO) throws ApisResourceAccessException, NoSuchAlgorithmException {
     	logger.debug("GrievanceServiceImpl::getGrievanceTicket()::entry");
         ResponseWrapper<Object> responseWrapper = new ResponseWrapper<>();
         responseWrapper.setId(grievanceRequestDTOMainRequestDTO.getId());
@@ -65,16 +65,17 @@ public class GrievanceServiceImpl implements GrievanceService {
             response.put(TICKET_ID, ticketId);
             responseWrapper.setResponse(response);
         } catch (ApisResourceAccessException e) {
-        	logger.error("%s - %s", ResidentErrorCode.GRIEVANCE_TICKET_GENERATION_FAILED.getErrorMessage(), e.getMessage());
-            throw new ApisResourceAccessException(ResidentErrorCode.GRIEVANCE_TICKET_GENERATION_FAILED.getErrorCode(), e);
-        } catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException(e);
+        	logger.error("%s - %s", ResidentErrorCode.API_RESOURCE_ACCESS_EXCEPTION.getErrorMessage(), e.getMessage());
+            throw new ApisResourceAccessException(ResidentErrorCode.API_RESOURCE_ACCESS_EXCEPTION.getErrorCode(), e.getMessage(), e);
+        } catch (NoSuchAlgorithmException | java.security.NoSuchAlgorithmException e) {
+            logger.error("%s - %s", ResidentErrorCode.NO_SUCH_ALGORITHM_EXCEPTION.getErrorMessage(), e.getMessage());
+            throw new NoSuchAlgorithmException(ResidentErrorCode.NO_SUCH_ALGORITHM_EXCEPTION.getErrorCode(), e.getMessage(), e);
         }
         logger.debug("GrievanceServiceImpl::getGrievanceTicket()::exit");
         return responseWrapper;
     }
 
-    private void insertDataInGrievanceTable(String ticketId, MainRequestDTO<GrievanceRequestDTO> grievanceRequestDTOMainRequestDTO) throws NoSuchAlgorithmException {
+    private void insertDataInGrievanceTable(String ticketId, MainRequestDTO<GrievanceRequestDTO> grievanceRequestDTOMainRequestDTO) throws NoSuchAlgorithmException, java.security.NoSuchAlgorithmException {
         ResidentGrievanceEntity residentGrievanceEntity = new ResidentGrievanceEntity();
         residentGrievanceEntity.setId(ticketId);
         residentGrievanceEntity.setEventId(grievanceRequestDTOMainRequestDTO.getRequest().getEventId());
