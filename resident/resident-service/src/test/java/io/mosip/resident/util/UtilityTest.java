@@ -35,7 +35,6 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 
-import io.mosip.resident.constant.*;
 import jakarta.servlet.http.HttpServletRequest;
 
 import org.apache.commons.io.IOUtils;
@@ -79,6 +78,13 @@ import io.mosip.kernel.core.pdfgenerator.spi.PDFGenerator;
 import io.mosip.kernel.core.util.HMACUtils2;
 import io.mosip.kernel.openid.bridge.api.constants.AuthErrorCode;
 import io.mosip.kernel.signature.dto.SignatureResponseDto;
+
+import io.mosip.resident.constant.ApiName;
+import io.mosip.resident.constant.RequestType;
+import io.mosip.resident.constant.ResidentConstants;
+import io.mosip.resident.constant.ResidentErrorCode;
+import io.mosip.resident.constant.EventStatusInProgress;
+
 import io.mosip.resident.dto.DynamicFieldCodeValueDTO;
 import io.mosip.resident.dto.DynamicFieldConsolidateResponseDto;
 import io.mosip.resident.dto.IdRepoResponseDto;
