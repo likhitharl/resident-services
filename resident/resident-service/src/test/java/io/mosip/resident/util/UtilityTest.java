@@ -7,9 +7,7 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -1426,5 +1424,14 @@ public class UtilityTest {
 		when(env.getProperty(anyString())).thenReturn("pdf logo");
 		String logoData = utility.getPDFHeaderLogo();
 		assertNotNull(logoData);
+	}
+
+	@Test
+	public void testSaveEntity_shouldInvokeRepositorySave() {
+
+		ResidentTransactionEntity entity = new ResidentTransactionEntity();
+		utility.saveEntity(entity);
+
+		verify(residentTransactionRepository, times(1)).save(entity);
 	}
 }
