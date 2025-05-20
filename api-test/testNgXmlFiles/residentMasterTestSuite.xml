@@ -7,6 +7,6 @@
 	</listeners>
 	<suite-files>
 		<suite-file path="residentPrerequisiteSuite.xml" />
-<!-- 		<suite-file path="residentSuite.xml" /> -->
+ 		<suite-file path="residentSuite.xml" />
 	</suite-files>
 </suite>
