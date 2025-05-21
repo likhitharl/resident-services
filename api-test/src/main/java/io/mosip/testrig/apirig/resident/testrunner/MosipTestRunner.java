@@ -67,8 +67,8 @@ public class MosipTestRunner {
 	 * @param arg
 	 */
 	public static void main(String[] arg) {
-		// Set execution elapse timeout to 1 hour
-		Watchdog watchdog = new Watchdog(90 * 60 * 1000L); // 1 hour
+		// Set execution elapse timeout to 1.5 hour
+		Watchdog watchdog = new Watchdog(90 * 60 * 1000L);
 		watchdog.start();
 
 		try {
