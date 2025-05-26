@@ -107,7 +107,7 @@ public class SimplePostForAutoGenId extends ResidentUtil implements ITest {
 		
 		inputJson = ResidentUtil.inputstringKeyWordHandeler(inputJson, testCaseName);
 
-		String outputJson = getJsonFromTemplate(testCaseDTO.getOutput(), testCaseDTO.getOutputTemplate());
+//		String outputJson = getJsonFromTemplate(testCaseDTO.getOutput(), testCaseDTO.getOutputTemplate());
 
 		if (testCaseDTO.getTemplateFields() != null && templateFields.length > 0) {
 			ArrayList<JSONObject> inputtestCases = AdminTestUtil.getInputTestCase(testCaseDTO);
