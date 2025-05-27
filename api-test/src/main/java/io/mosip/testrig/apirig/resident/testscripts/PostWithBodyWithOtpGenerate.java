@@ -26,7 +26,7 @@ import io.mosip.testrig.apirig.resident.utils.ResidentUtil;
 import io.mosip.testrig.apirig.testrunner.BaseTestCase;
 import io.mosip.testrig.apirig.testrunner.HealthChecker;
 import io.mosip.testrig.apirig.utils.AdminTestException;
-import io.mosip.testrig.apirig.utils.AdminTestUtil;
+//import io.mosip.testrig.apirig.utils.AdminTestUtil;
 import io.mosip.testrig.apirig.utils.AuthenticationTestException;
 import io.mosip.testrig.apirig.utils.GlobalConstants;
 import io.mosip.testrig.apirig.utils.OutputValidationUtil;
@@ -94,7 +94,7 @@ public class PostWithBodyWithOtpGenerate extends ResidentUtil implements ITest {
 			}
 		}
 		auditLogCheck = testCaseDTO.isAuditLogCheck();
-		String tempUrl = ResidentConfigManager.getEsignetBaseUrl();
+//		String tempUrl = ResidentConfigManager.getEsignetBaseUrl();
 		JSONObject req = new JSONObject(testCaseDTO.getInput());
 		String otpRequest = null;
 		String sendOtpReqTemplate = null;
