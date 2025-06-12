@@ -66,8 +66,7 @@ GetAllTemplateBylangCodeAndTemplateTypeCode:
       output: '{
         "errors": [
     {
-      "errorCode": "RES-SER-415",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-415"
     }
   ]
 }'
@@ -88,8 +87,7 @@ GetAllTemplateBylangCodeAndTemplateTypeCode:
       output: '{
         "errors": [
     {
-      "errorCode": "RES-SER-415",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-415"
     }
   ]
 }'
@@ -183,8 +181,7 @@ GetAllTemplateBylangCodeAndTemplateTypeCode:
       output: '{
         "errors": [
     {
-      "errorCode": "RES-SER-415",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-415"
     }
   ]
 }'
@@ -205,8 +202,7 @@ GetAllTemplateBylangCodeAndTemplateTypeCode:
       output: '{
         "errors": [
     {
-      "errorCode": "RES-SER-415",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-415"
     }
   ]
 }'

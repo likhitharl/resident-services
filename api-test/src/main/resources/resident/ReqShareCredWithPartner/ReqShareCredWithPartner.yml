@@ -41,8 +41,7 @@ ReqShareCredWithPartner:
       output: '{
    		"errors": [
         {
-            "errorCode": "KER-ATH-401",
-            "message": "$IGNORE$"
+            "errorCode": "KER-ATH-401"
         }
     ]
 }'
@@ -135,8 +134,7 @@ ReqShareCredWithPartner:
       output: '{
    		"errors": [
         {
-            "errorCode": "RES-SER-515",
-            "message": "$IGNORE$"
+            "errorCode": "RES-SER-515"
         }
     ]
 }'
@@ -161,8 +159,7 @@ ReqShareCredWithPartner:
       output: '{
    		"errors": [
         {
-            "errorCode": "RES-SER-461",
-            "message": "$IGNORE$"
+            "errorCode": "RES-SER-461"
         }
     ]
 }'
@@ -187,8 +184,7 @@ ReqShareCredWithPartner:
       output: '{
    		"errors": [
         {
-            "errorCode": "RES-SER-461",
-            "message": "$IGNORE$"
+            "errorCode": "RES-SER-461"
         }
     ]
 }'
@@ -302,8 +298,7 @@ ReqShareCredWithPartner:
       output: '{
    		"errors": [
         {
-            "errorCode": "RES-SER-515",
-            "message": "$IGNORE$"
+            "errorCode": "RES-SER-515"
         }
     ]
 }'
@@ -328,8 +323,7 @@ ReqShareCredWithPartner:
       output: '{
    		"errors": [
         {
-            "errorCode": "RES-SER-461",
-            "message": "$IGNORE$"
+            "errorCode": "RES-SER-461"
         }
     ]
 }'
@@ -354,8 +348,7 @@ ReqShareCredWithPartner:
       output: '{
    		"errors": [
         {
-            "errorCode": "RES-SER-461",
-            "message": "$IGNORE$"
+            "errorCode": "RES-SER-461"
         }
     ]
 }'

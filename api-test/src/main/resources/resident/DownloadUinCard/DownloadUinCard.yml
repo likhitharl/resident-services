@@ -27,9 +27,7 @@ DownloadUinCard:
 
       output: '{
                 "sendOtpResp":{
-			        "maskedMobile": "$IGNORE$",
-			        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult",
-			        "maskedEmail": "$IGNORE$"
+			        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult"
     }
 }'
 
@@ -60,13 +58,10 @@ DownloadUinCard:
 
       output: '{
 	           "errors": [{
-				"errorCode": "RES-SER-457",
-		        "message": "$IGNORE$"
+				"errorCode": "RES-SER-457"
 			}],
                 "sendOtpResp":{
-			        "maskedMobile": "$IGNORE$",
-			        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult",
-			        "maskedEmail": "$IGNORE$"
+			        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult"
     }
 }'
 
@@ -97,13 +92,10 @@ DownloadUinCard:
 
       output: '{
 	           "errors": [{
-				"errorCode": "RES-SER-457",
-		        "message": "$IGNORE$"
+				"errorCode": "RES-SER-457"
 			}],
                 "sendOtpResp":{
-			        "maskedMobile": "$IGNORE$",
-			        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult",
-			        "maskedEmail": "$IGNORE$"
+			        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult"
     }
 }'
 
@@ -134,13 +126,10 @@ DownloadUinCard:
 
       output: '{
 	           "errors": [{
-				"errorCode": "RES-SER-457",
-		        "message": "$IGNORE$"
+				"errorCode": "RES-SER-457"
 			}],
                 "sendOtpResp":{
-			        "maskedMobile": "$IGNORE$",
-			        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult",
-			        "maskedEmail": "$IGNORE$"
+			        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult"
     }
 }'
 
@@ -175,9 +164,7 @@ DownloadUinCard:
 			        "message": "Invalid input parameter - otp"
 			}],
                 "sendOtpResp":{
-			        "maskedMobile": "$IGNORE$",
-			        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult",
-			        "maskedEmail": "$IGNORE$"
+			        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult"
     }
 }'
 
@@ -208,13 +195,10 @@ DownloadUinCard:
 
       output: '{
 	           "errors": [{
-					"errorCode": "RES-SER-410",
-			        "message": "$IGNORE$"
+					"errorCode": "RES-SER-410"
 			}],
                 "sendOtpResp":{
-			        "maskedMobile": "$IGNORE$",
-			        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult",
-			        "maskedEmail": "$IGNORE$"
+			        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult"
     }
 }'
 
@@ -245,13 +229,10 @@ DownloadUinCard:
 
       output: '{
 	           "errors": [{
-					"errorCode": "RES-SER-410",
-			        "message": "$IGNORE$"
+					"errorCode": "RES-SER-410"
 			}],
                 "sendOtpResp":{
-			        "maskedMobile": "$IGNORE$",
-			        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult",
-			        "maskedEmail": "$IGNORE$"
+			        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult"
     }
 }'
 
@@ -282,13 +263,10 @@ DownloadUinCard:
 
       output: '{
 	           "errors": [{
-					"errorCode": "RES-SER-410",
-			        "message": "$IGNORE$"
+					"errorCode": "RES-SER-410"
 			}],
                 "sendOtpResp":{
-			        "maskedMobile": "$IGNORE$",
-			        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult",
-			        "maskedEmail": "$IGNORE$"
+			        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult"
     }
 }'
    

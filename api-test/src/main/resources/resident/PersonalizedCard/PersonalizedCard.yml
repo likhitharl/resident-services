@@ -52,8 +52,7 @@ PersonalizedCard:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410 ",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410 "
     }
   ]
        
@@ -76,8 +75,7 @@ PersonalizedCard:
       output: '{
        "errors": [
        {
-      "errorCode": "RES-SER-410 ",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410 "
       }
       ]
        
@@ -100,8 +98,7 @@ PersonalizedCard:
       output: '{
              "errors": [
        {
-      "errorCode": "RES-SER-410 ",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410 "
       }
       ]
 }'
@@ -124,8 +121,7 @@ PersonalizedCard:
       output: '{
          "errors": [
        {
-      "errorCode": "RES-SER-410 ",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410 "
       }
       ]
        
@@ -148,8 +144,7 @@ PersonalizedCard:
       output: '{
           "errors": [
        {
-      "errorCode": "RES-SER-410 ",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410 "
       }
       ]
 }'
@@ -172,8 +167,7 @@ PersonalizedCard:
       output: '{
           "errors": [
        {
-      "errorCode": "RES-SER-410 ",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410 "
       }
       ]
 }'

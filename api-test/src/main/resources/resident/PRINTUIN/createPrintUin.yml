@@ -28,9 +28,7 @@ PrintUin:
     }'
       output: '{
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_PrintUin_Invalid_Empty_Cardtype_Neg:
@@ -63,14 +61,11 @@ PrintUin:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_PrintUin_Invalid_MaxLength10_Cardtype_Neg:
@@ -103,14 +98,11 @@ PrintUin:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_PrintUin_Invalid_Missing_Cardtype_Neg:
@@ -143,14 +135,11 @@ PrintUin:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_PrintUin_Invalid_IndividualIDType_Neg:
@@ -183,14 +172,11 @@ PrintUin:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_PrintUin_Invalid_MaxLength3_IndividualIDType_Neg:
@@ -223,14 +209,11 @@ PrintUin:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_PrintUin_Invalid_Missing_IndividualID_Neg:
@@ -263,14 +246,11 @@ PrintUin:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_PrintUin_Invalid_Empty_Otp_Neg:
@@ -303,14 +283,11 @@ PrintUin:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_PrintUin_Invalid_MaxLength6_Otp_Neg:
@@ -343,14 +320,11 @@ PrintUin:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-422",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-422"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_PrintUin_Invalid_Otp_Neg:
@@ -383,14 +357,11 @@ PrintUin:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-422",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-422"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_PrintUin_Invalid_Empty_requestTime_Neg:
@@ -423,14 +394,11 @@ PrintUin:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_PrintUin_Invalid_Empty_TrnxID_Neg:
@@ -463,14 +431,11 @@ PrintUin:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_PrintUin_Invalid_Value_TrnxID_Neg:
@@ -503,14 +468,11 @@ PrintUin:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-422",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-422"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_PrintUin_Invalid_Empty_version_Neg:
@@ -543,14 +505,11 @@ PrintUin:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_PrintUin_Invalid_version_Neg:
@@ -583,14 +542,11 @@ PrintUin:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_PrintUin_Invalid_Individual_Id_Neg:
@@ -623,14 +579,11 @@ PrintUin:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_PrintUin_Missing_Individual_Id_Neg:
@@ -663,14 +616,11 @@ PrintUin:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_PrintUin_Empty_Individual_Id_Neg:
@@ -703,13 +653,10 @@ PrintUin:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
         "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
     }
 }'

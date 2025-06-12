@@ -15,7 +15,6 @@ SendOTP:
     "individualIdType": "UIN"
 }'
       output: '{
-        "maskedMobile": "$IGNORE$",
         "maskedEmail": "XXsXXeXXaXXoXXtXXn@gmail.com"
     }'
    Resident_SendOTP_Valid_UIN_Phone_Smoke:
@@ -35,8 +34,6 @@ SendOTP:
     "individualIdType": "UIN"
 }'
       output: '{
-        "maskedMobile": "$IGNORE$",
-        "maskedEmail": "$IGNORE$"
     }'
    Resident_SendOTP_Valid_UIN_Email_Smoke:
       endPoint: /resident/v1/req/otp
@@ -55,7 +52,6 @@ SendOTP:
     "individualIdType": "UIN"
 }'
       output: '{
-        "maskedMobile": "$IGNORE$",
         "maskedEmail": "XXsXXeXXaXXoXXtXXn@gmail.com"
     }'
    Resident_SendOTP_RevokedVID_Invalid:
@@ -74,8 +70,7 @@ SendOTP:
     "individualIdType": "UIN"
 }'
       output: '{
-      "errorCode": "IDA-MLC-018",
-      "errorMessage": "$IGNORE$"
+      "errorCode": "IDA-MLC-018"
     }'
    Resident_SendOTP_Valid_UIN_Invalid_empty_otpChannel:
       endPoint: /resident/v1/req/otp
@@ -93,8 +88,7 @@ SendOTP:
     "individualIdType": "UIN"
 }'
       output: '{
-      "errorCode": "IDA-OTA-008",
-      "errorMessage": "$IGNORE$"
+      "errorCode": "IDA-OTA-008"
     }'
    Resident_SendOTP_InValid_individualId:
       endPoint: /resident/v1/req/otp
@@ -111,8 +105,7 @@ SendOTP:
     "individualIdType": "UIN"
 }'
       output: '{
-         "errorCode": "IDA-MLC-009",
-         "errorMessage": "$IGNORE$"
+         "errorCode": "IDA-MLC-009"
     }'
    Resident_SendOTP_InValid_Missing_individualId:
       endPoint: /resident/v1/req/otp
@@ -129,8 +122,7 @@ SendOTP:
     "individualIdType": "UIN"
 }'
       output: '{
-         "errorCode": "IDA-MLC-009",
-         "errorMessage": "$IGNORE$"
+         "errorCode": "IDA-MLC-009"
     }'
    Resident_SendOTP_InValid_Empty_transactionID:
       endPoint: /resident/v1/req/otp
@@ -147,8 +139,7 @@ SendOTP:
     "individualIdType": "UIN"
 }'
       output: '{
-         "errorCode": "IDA-MLC-006",
-         "errorMessage": "$IGNORE$"
+         "errorCode": "IDA-MLC-006"
     }'
    Resident_SendOTP_InValid_transactionID:
       endPoint: /resident/v1/req/otp
@@ -165,8 +156,7 @@ SendOTP:
     "individualIdType": "UIN"
 }'
       output: '{
-         "errorCode": "IDA-MLC-009",
-         "errorMessage": "$IGNORE$"
+         "errorCode": "IDA-MLC-009"
     }'
    Resident_SendOTP_InValid_Missing_transactionID:
       endPoint: /resident/v1/req/otp
@@ -183,8 +173,7 @@ SendOTP:
     "individualIdType": "UIN"
 }'
       output: '{
-         "errorCode": "RES-SER-425",
-         "message": "$IGNORE$"
+         "errorCode": "RES-SER-425"
     }'
    Resident_SendOTP_InValid_Empty_requestTime:
       endPoint: /resident/v1/req/otp
@@ -201,8 +190,7 @@ SendOTP:
     "individualIdType": "UIN"
 }'
       output: '{
-         "errorCode": "IDA-MLC-006",
-         "errorMessage": "$IGNORE$"
+         "errorCode": "IDA-MLC-006"
     }'
    Resident_SendOTP_InValid_requestTime:
       endPoint: /resident/v1/req/otp
@@ -219,6 +207,5 @@ SendOTP:
     "individualIdType": "UIN"
 }'
       output: '{
-         "errorCode": "RES-SER-425",
-         "message": "$IGNORE$"
+         "errorCode": "RES-SER-425"
     }'

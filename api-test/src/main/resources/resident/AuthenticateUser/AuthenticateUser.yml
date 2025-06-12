@@ -28,9 +28,7 @@ AuthenticateUser:
 }'
       output: '{
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOtpIdp/SendOtpIdpResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOtpIdp/SendOtpIdpResult"
     }
 }'
 
@@ -63,8 +61,6 @@ AuthenticateUser:
 }'
       output: '{
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOtpIdp/SendOtpIdpResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOtpIdp/SendOtpIdpResult"
     }
 }'

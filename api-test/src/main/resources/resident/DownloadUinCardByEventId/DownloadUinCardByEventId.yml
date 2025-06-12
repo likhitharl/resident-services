@@ -62,8 +62,7 @@ DownloadUinCardByEventId:
 }'
       output: '{
         "errors": {
-    "errorCode": "RES-SER-412",
-    "message": "$IGNORE$"
+    "errorCode": "RES-SER-412"
   }
 }'
 
@@ -83,8 +82,7 @@ DownloadUinCardByEventId:
       output: '{
       [
     {
-      "errorCode": "KER-ATH-401",
-      "message": "$IGNORE$"
+      "errorCode": "KER-ATH-401"
     }
   ]
         
@@ -106,8 +104,7 @@ DownloadUinCardByEventId:
       output: '{
          [
     {
-      "errorCode": "KER-ATH-401",
-      "message": "$IGNORE$"
+      "errorCode": "KER-ATH-401"
     }
   ]
 }'

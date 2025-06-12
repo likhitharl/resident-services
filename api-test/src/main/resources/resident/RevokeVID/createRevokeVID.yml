@@ -33,9 +33,7 @@ RevokeVID:
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -73,9 +71,7 @@ RevokeVID:
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -113,9 +109,7 @@ RevokeVID:
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -153,9 +147,7 @@ RevokeVID:
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -189,14 +181,11 @@ RevokeVID:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -230,14 +219,11 @@ RevokeVID:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -271,14 +257,11 @@ RevokeVID:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-412",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-412"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_RevokeVID_Missing_Individual_Id:
@@ -311,14 +294,11 @@ RevokeVID:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -352,14 +332,11 @@ RevokeVID:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_RevokeVID_Missing_Request_Time:
@@ -392,14 +369,11 @@ RevokeVID:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_RevokeVID_Invalid_Request_Time:
@@ -432,14 +406,11 @@ RevokeVID:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -473,14 +444,11 @@ RevokeVID:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -514,14 +482,11 @@ RevokeVID:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_RevokeVID_Missing_version:
@@ -554,14 +519,11 @@ RevokeVID:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -595,14 +557,11 @@ RevokeVID:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -636,14 +595,11 @@ RevokeVID:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -677,14 +633,11 @@ RevokeVID:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -718,14 +671,11 @@ RevokeVID:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -759,14 +709,11 @@ RevokeVID:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
    Resident_RevokeVID_Invalid_vidstatus:
@@ -799,14 +746,11 @@ RevokeVID:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -840,14 +784,11 @@ RevokeVID:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -880,9 +821,7 @@ RevokeVID:
     }'
       output: '{
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -915,9 +854,7 @@ RevokeVID:
     }'
       output: '{
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -950,9 +887,7 @@ RevokeVID:
     }'
       output: '{
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -985,9 +920,7 @@ RevokeVID:
     }'
       output: '{
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -1020,9 +953,7 @@ RevokeVID:
     }'
       output: '{
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -1055,9 +986,7 @@ RevokeVID:
     }'
       output: '{
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -1091,14 +1020,11 @@ RevokeVID:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-412",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-412"
     }
   ],     
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -1132,14 +1058,11 @@ RevokeVID:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-412",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-412"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
 
@@ -1173,13 +1096,10 @@ RevokeVID:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-412",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-412"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
 }'
