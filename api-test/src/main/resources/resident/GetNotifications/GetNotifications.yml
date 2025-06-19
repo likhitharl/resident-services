@@ -70,8 +70,7 @@ GetNotifications:
       output: '{    
          "errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -134,8 +133,7 @@ GetNotifications:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -157,8 +155,7 @@ GetNotifications:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -180,8 +177,7 @@ GetNotifications:
       output: '{
         "errors": [
     {
-      "errorCode": "RES-SER-446",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-446"
     }
   ]
 }'
@@ -203,8 +199,7 @@ GetNotifications:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-447",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-447"
     }
   ]
         
@@ -227,8 +222,7 @@ GetNotifications:
       output: '{
         "errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]     
 }'
@@ -250,8 +244,7 @@ GetNotifications:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
         
@@ -344,8 +337,7 @@ GetNotifications:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -383,8 +375,7 @@ GetNotifications:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'

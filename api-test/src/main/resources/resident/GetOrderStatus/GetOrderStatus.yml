@@ -104,8 +104,7 @@ GetOrderStatus:
       output: '{
 		  "errors": [
 		    {
-		      "errorCode": "RES-SER-475",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-475"
 		    }
 		  ]
 }'
@@ -124,8 +123,7 @@ GetOrderStatus:
       output: '{
 		  "errors": [
 		    {
-		      "errorCode": "RES-SER-476",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-476"
 		    }
 		  ]
 }'
@@ -144,8 +142,7 @@ GetOrderStatus:
       output: '{
 		  "errors": [
 		    {
-		      "errorCode": "RES-SER-477",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-477"
 		    }
 		  ]
 }'
@@ -164,8 +161,7 @@ GetOrderStatus:
       output: '{
 		  "errors": [
 		    {
-		      "errorCode": "RES-SER-478",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-478"
 		    }
 		  ]
 }'
@@ -275,8 +271,7 @@ GetOrderStatus:
       output: '{
 		  "errors": [
 		    {
-		      "errorCode": "RES-SER-475",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-475"
 		    }
 		  ]
 }'
@@ -295,8 +290,7 @@ GetOrderStatus:
       output: '{
 		  "errors": [
 		    {
-		      "errorCode": "RES-SER-476",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-476"
 		    }
 		  ]
 }'
@@ -315,8 +309,7 @@ GetOrderStatus:
       output: '{
 		  "errors": [
 		    {
-		      "errorCode": "RES-SER-477",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-477"
 		    }
 		  ]
 }'
@@ -335,8 +328,7 @@ GetOrderStatus:
       output: '{
 		  "errors": [
 		    {
-		      "errorCode": "RES-SER-478",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-478"
 		    }
 		  ]
 }'

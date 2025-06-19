@@ -48,8 +48,7 @@ GetRemainingupdatecountbyIndividualIdRequest2:
       output: '{
        "errors": [
     {
-      "errorCode": "KER-ATH-401",
-      "message": "$IGNORE$"
+      "errorCode": "KER-ATH-401"
     }
   ]
    		

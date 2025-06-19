@@ -25,9 +25,7 @@ CheckAidStatus:
 }'
       output: '{
         "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult"
     }
 }'
 
@@ -58,14 +56,11 @@ CheckAidStatus:
       output: '{
 		 "errors": [
 	    {
-	      "errorCode": "RES-SER-410",
-	      "message": "$IGNORE$"
+	      "errorCode": "RES-SER-410"
 	    }
   ],
         "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult"
     }
 }'
 
@@ -96,14 +91,11 @@ CheckAidStatus:
       output: '{
 		 "errors": [
 	    {
-	      "errorCode": "RES-SER-410",
-	      "message": "$IGNORE$"
+	      "errorCode": "RES-SER-410"
 	    }
   ],
         "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult"
     }
 }'
 
@@ -134,14 +126,11 @@ CheckAidStatus:
       output: '{
 		 "errors": [
 	    {
-	      "errorCode": "RES-SER-422",
-	      "message": "$IGNORE$"
+	      "errorCode": "RES-SER-422"
 	    }
   ],
         "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult"
     }
 }'
 
@@ -172,14 +161,11 @@ CheckAidStatus:
       output: '{
 		 "errors": [
 	    {
-	      "errorCode": "RES-SER-410",
-	      "message": "$IGNORE$"
+	      "errorCode": "RES-SER-410"
 	    }
   ],
         "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult"
     }
 }'
 
@@ -210,14 +196,11 @@ CheckAidStatus:
       output: '{
 		 "errors": [
 	    {
-	      "errorCode": "RES-SER-410",
-	      "message": "$IGNORE$"
+	      "errorCode": "RES-SER-410"
 	    }
   ],
         "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult"
     }
 }'
 
@@ -248,14 +231,11 @@ CheckAidStatus:
       output: '{
 		 "errors": [
 	    {
-	      "errorCode": "RES-SER-410",
-	      "message": "$IGNORE$"
+	      "errorCode": "RES-SER-410"
 	    }
   ],
         "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/ReqAidOtp/ReqAidOtpResult"
     }
 
 }'

@@ -45,8 +45,7 @@ GrievanceTicket:
       output: '{
       	"errors": [
     {
-      "errorCode": "KER-ATH-401",
-      "message": "$IGNORE$"
+      "errorCode": "KER-ATH-401"
     }
   ]
 }'
@@ -117,8 +116,7 @@ GrievanceTicket:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -145,8 +143,7 @@ GrievanceTicket:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -173,8 +170,7 @@ GrievanceTicket:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-414",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-414"
     }
   ]
 }'
@@ -201,8 +197,7 @@ GrievanceTicket:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-414",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-414"
     }
   ]
 }'
@@ -229,8 +224,7 @@ GrievanceTicket:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -257,8 +251,7 @@ GrievanceTicket:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -285,8 +278,7 @@ GrievanceTicket:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -336,8 +328,7 @@ GrievanceTicket:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -364,8 +355,7 @@ GrievanceTicket:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -392,8 +382,7 @@ GrievanceTicket:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-414",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-414"
     }
   ]
 }'
@@ -420,8 +409,7 @@ GrievanceTicket:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-414",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-414"
     }
   ]
 }'

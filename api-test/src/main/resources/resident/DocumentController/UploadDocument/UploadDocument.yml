@@ -18,7 +18,6 @@ UploadDocument:
 }'
       output: '{
         "transactionId": "1234567889",
-	    "docId": "$IGNORE$",
 	    "docName": "doc_POA.pdf",
 	    "docCatCode": "poa",
 	    "docTypCode": "doc008",
@@ -44,7 +43,6 @@ UploadDocument:
 }'
       output: '{
         "transactionId": "1234567789",
-	    "docId": "$IGNORE$",
 	    "docName": "doc_POA.pdf",
 	    "docCatCode": "poa",
 	    "docTypCode": "doc008",
@@ -71,8 +69,7 @@ UploadDocument:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-514",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-514"
     }
   ]
 }'
@@ -97,8 +94,7 @@ UploadDocument:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-516",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-516"
     }
   ]
 }'
@@ -123,8 +119,7 @@ UploadDocument:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "Bad Request"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -272,8 +267,7 @@ UploadDocument:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-514",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-514"
     }
   ]
 }'
@@ -298,8 +292,7 @@ UploadDocument:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-516",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-516"
     }
   ]
 }'

@@ -35,8 +35,7 @@ RidCheckStatus:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -58,8 +57,7 @@ RidCheckStatus:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-408",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-408"
     }
   ]
 }'
@@ -82,8 +80,7 @@ RidCheckStatus:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -105,8 +102,7 @@ RidCheckStatus:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -128,8 +124,7 @@ RidCheckStatus:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -151,8 +146,7 @@ RidCheckStatus:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -174,8 +168,7 @@ RidCheckStatus:
       output: '{
    "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'

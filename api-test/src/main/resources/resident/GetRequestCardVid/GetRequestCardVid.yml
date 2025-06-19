@@ -30,8 +30,7 @@ GetRequestCardVid:
       output: '{
       "errors": [
     {
-      "errorCode": "KER-ATH-401",
-      "message": "$IGNORE$"
+      "errorCode": "KER-ATH-401"
     }
   ]
 }'
@@ -50,8 +49,7 @@ GetRequestCardVid:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -104,8 +102,7 @@ GetRequestCardVid:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -124,8 +121,7 @@ GetRequestCardVid:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-474",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-474"
     }
   ]
 }'
