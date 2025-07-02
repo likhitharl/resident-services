@@ -41,8 +41,17 @@ public class ResidentUtil extends AdminTestUtil {
 
 		addTestCaseDetailsToMap(modifiedTestCaseName, testCaseDTO.getUniqueIdentifier());
 		
+		if (testCaseName.contains("ESignet_") && isCaptchaEnabled()) {
+			if (!MosipTestRunner.skipAll) {
+				MosipTestRunner.skipAll = true;
+			}
+		}		 
+		
 		if (MosipTestRunner.skipAll == true) {
-			throw new SkipException(GlobalConstants.PRE_REQUISITE_FAILED_MESSAGE);
+			GlobalMethods.reportCaptchaStatus(GlobalConstants.CAPTCHA_ENABLED, true);
+			throw new SkipException(GlobalConstants.CAPTCHA_ENABLED_MESSAGE);
+		} else {
+			GlobalMethods.reportCaptchaStatus(GlobalConstants.CAPTCHA_ENABLED, false);
 		}
 		
 		if (SkipTestCaseHandler.isTestCaseInSkippedList(testCaseName)) {
