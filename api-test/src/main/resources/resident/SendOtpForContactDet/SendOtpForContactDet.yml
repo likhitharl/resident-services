@@ -50,8 +50,7 @@ SendOtpForContactDet:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
 }
   ]
 }'
@@ -72,8 +71,7 @@ SendOtpForContactDet:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -94,8 +92,7 @@ SendOtpForContactDet:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -116,8 +113,7 @@ SendOtpForContactDet:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -138,8 +134,7 @@ SendOtpForContactDet:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -160,8 +155,7 @@ SendOtpForContactDet:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -182,8 +176,7 @@ SendOtpForContactDet:
       output: '{
          "errors": [
     {
-      "errorCode": "KER-ATH-401",
-      "message": "$IGNORE$"
+      "errorCode": "KER-ATH-401"
     }
   ]
 }'
@@ -204,8 +197,7 @@ SendOtpForContactDet:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -226,8 +218,7 @@ SendOtpForContactDet:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -248,8 +239,7 @@ SendOtpForContactDet:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
 }
   ]
 }'
@@ -270,8 +260,7 @@ SendOtpForContactDet:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -292,8 +281,7 @@ SendOtpForContactDet:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -314,8 +302,7 @@ SendOtpForContactDet:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -336,8 +323,7 @@ SendOtpForContactDet:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -358,8 +344,7 @@ SendOtpForContactDet:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -380,8 +365,7 @@ SendOtpForContactDet:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -402,8 +386,7 @@ SendOtpForContactDet:
       output: '{
          "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'

@@ -55,8 +55,7 @@ TranslitrateData:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -79,8 +78,7 @@ TranslitrateData:
       output: '{
       	"errors": [
     {
-      "errorCode": "KER-ATH-401",
-      "message": "$IGNORE$"
+      "errorCode": "KER-ATH-401"
     }
   ]
 }'
@@ -103,8 +101,7 @@ TranslitrateData:
       output: '{
       	"errors": [
     {
-      "errorCode": "KER-ATH-401",
-      "message": "$IGNORE$"
+      "errorCode": "KER-ATH-401"
     }
   ]
 }'
@@ -144,8 +141,7 @@ TranslitrateData:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -168,8 +164,7 @@ TranslitrateData:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -192,8 +187,7 @@ TranslitrateData:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -216,8 +210,7 @@ TranslitrateData:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -240,8 +233,7 @@ TranslitrateData:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -264,8 +256,7 @@ TranslitrateData:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -288,8 +279,7 @@ TranslitrateData:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -312,8 +302,7 @@ TranslitrateData:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -336,8 +325,7 @@ TranslitrateData:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -360,8 +348,7 @@ TranslitrateData:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -384,8 +371,7 @@ TranslitrateData:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -408,8 +394,7 @@ TranslitrateData:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -432,8 +417,7 @@ TranslitrateData:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'

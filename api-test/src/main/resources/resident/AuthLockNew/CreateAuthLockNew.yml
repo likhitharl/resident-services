@@ -138,8 +138,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -163,8 +162,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -188,8 +186,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -213,8 +210,7 @@ AuthLockNew:
       output: '{
   		"errors": [
 		    {
-		      "errorCode": "RES-SER-410",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-410"
 		    }
 		  ]
 }'
@@ -238,8 +234,7 @@ AuthLockNew:
       output: '{
   		"errors": [
 		    {
-		      "errorCode": "RES-SER-418",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-418"
 		    }
 		  ]
 }'
@@ -263,8 +258,7 @@ AuthLockNew:
       output: '{
   		"errors": [
 		    {
-		      "errorCode": "RES-SER-418",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-418"
 		    }
 		  ]
 }'
@@ -288,8 +282,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -313,8 +306,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
   }'
@@ -338,8 +330,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -428,8 +419,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -453,8 +443,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -478,8 +467,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -666,8 +654,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -691,8 +678,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -716,8 +702,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -741,8 +726,7 @@ AuthLockNew:
       output: '{
   		"errors": [
 		    {
-		      "errorCode": "RES-SER-410",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-410"
 		    }
 		  ]
 }'
@@ -766,8 +750,7 @@ AuthLockNew:
       output: '{
   		"errors": [
 		    {
-		      "errorCode": "RES-SER-418",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-418"
 		    }
 		  ]
 }'
@@ -791,8 +774,7 @@ AuthLockNew:
       output: '{
   		"errors": [
 		    {
-		      "errorCode": "RES-SER-418",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-418"
 		    }
 		  ]
 }'
@@ -816,8 +798,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -841,8 +822,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
   }'
@@ -866,8 +846,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -956,8 +935,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -981,8 +959,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -1006,8 +983,7 @@ AuthLockNew:
       output: '{
   		"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'

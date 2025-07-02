@@ -12,8 +12,7 @@ DownloadCredential:
         "requesttime": "$TIMESTAMP$"
     }'
       output: ' {
-        "Content-Type": "application/pdf",
-        "filename": "$IGNORE$"
+        "Content-Type": "application/pdf"
     }'
    Resident_CredentialsStatus_All_Valid_Smoke_QrCode:
       endPoint: /resident/v1/req/card/{requestId}
@@ -28,8 +27,7 @@ DownloadCredential:
         "requesttime": "$TIMESTAMP$"
     }'
       output: ' {
-        "Content-Type": "application/pdf",
-        "filename": "$IGNORE$"
+        "Content-Type": "application/pdf"
     }'
    Resident_CredentialsStatus_All_Valid_Smoke_Reprint:
       endPoint: /resident/v1/req/card/{requestId}
@@ -44,8 +42,7 @@ DownloadCredential:
         "requesttime": "$TIMESTAMP$"
     }'
       output: ' {
-        "Content-Type": "application/pdf",
-        "filename": "$IGNORE$"
+        "Content-Type": "application/pdf"
     }'
    Resident_CredentialsStatus_VID_All_Valid_Smoke_euin:
       endPoint: /resident/v1/req/card/{requestId}
@@ -60,8 +57,7 @@ DownloadCredential:
         "requesttime": "$TIMESTAMP$"
     }'
       output: ' {
-        "Content-Type": "application/pdf",
-        "filename": "$IGNORE$"
+        "Content-Type": "application/pdf"
     }'
    Resident_CredentialsStatus_VID_All_Valid_Smoke_Reprint:
       endPoint: /resident/v1/req/card/{requestId}
@@ -76,8 +72,7 @@ DownloadCredential:
         "requesttime": "$TIMESTAMP$"
     }'
       output: ' {
-        "Content-Type": "application/pdf",
-        "filename": "$IGNORE$"
+        "Content-Type": "application/pdf"
     }'
    Resident_CredentialsStatus_VID_All_Valid_Smoke_QrCode:
       endPoint: /resident/v1/req/card/{requestId}
@@ -92,8 +87,7 @@ DownloadCredential:
         "requesttime": "$TIMESTAMP$"
     }'
       output: ' {
-        "Content-Type": "application/pdf",
-        "filename": "$IGNORE$"
+        "Content-Type": "application/pdf"
     }'
    Resident_CredentialsStatus_Invalid_requestId:
       endPoint: /resident/v1/req/card/{requestId}
@@ -110,8 +104,7 @@ DownloadCredential:
       output: ' {
        "errors": [
     {
-      "errorCode": "RES-SER-29",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-29"
     }
   ]
     }'
@@ -130,8 +123,7 @@ DownloadCredential:
       output: ' {
        "errors": [
     {
-      "errorCode": "RES-SER-29",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-29"
     }
   ]
     }'
@@ -150,8 +142,7 @@ DownloadCredential:
       output: ' {
        "errors": [
     {
-      "errorCode": "RES-SER-29",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-29"
     }
   ]
     }'
@@ -170,8 +161,7 @@ DownloadCredential:
       output: ' {
        "errors": [
     {
-      "errorCode": "RES-SER-29",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-29"
     }
   ]
     }'

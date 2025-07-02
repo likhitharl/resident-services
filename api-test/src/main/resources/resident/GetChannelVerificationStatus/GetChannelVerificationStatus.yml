@@ -31,13 +31,9 @@ GetChannelVerificationStatus:
       output: '{
   "verificationStatus": "true",
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
         "sendOtpResTemplate":"resident/SendOTP/createSendOTPResultForEmail",
-        "maskedEmail": "$IGNORE$",
   "validateOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
     }
 }'
@@ -74,13 +70,9 @@ GetChannelVerificationStatus:
       output: '{
   "verificationStatus": "true",
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
         "sendOtpResTemplate":"resident/SendOTP/createSendOTPResultForPhone",
-        "maskedEmail": "$IGNORE$",
   "validateOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
     }
 }'
@@ -117,18 +109,13 @@ GetChannelVerificationStatus:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
         "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$",
   "validateOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
     }
 }'
@@ -165,18 +152,13 @@ GetChannelVerificationStatus:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-522",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-522"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
         "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$",
   "validateOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
     }
 }'
@@ -213,18 +195,13 @@ GetChannelVerificationStatus:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
         "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$",
   "validateOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
     }
 }'
@@ -261,18 +238,13 @@ GetChannelVerificationStatus:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-522",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-522"
     }
   ],
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
         "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$",
   "validateOtpResp":{
-        "maskedMobile": "$IGNORE$",
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResult"
     }
     }
 }'
@@ -310,10 +282,8 @@ GetChannelVerificationStatus:
   "verificationStatus": true,
   "sendOtpResp":{
         "sendOtpResTemplate":"resident/SendOTP/createSendOTPResultForEmail",
-        "maskedEmail": "$IGNORE$",
   "validateOtpResp":{
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResultForEmail",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResultForEmail"
     }
     }
 }'
@@ -350,10 +320,8 @@ GetChannelVerificationStatus:
       output: '{
   "verificationStatus": "true",
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
         "sendOtpResTemplate":"resident/SendOTP/createSendOTPResultForPhone",
   "validateOtpResp":{
-        "maskedMobile": "$IGNORE$",
         "sendOtpResTemplate":"resident/SendOTP/createSendOTPResultForPhone"
     }
     }
@@ -391,16 +359,13 @@ GetChannelVerificationStatus:
       output: '{
        "errors": [
     {
-      "errorCode": "RES-OTP-011",
-      "message": "$IGNORE$"
+      "errorCode": "RES-OTP-011"
     }
   ],
   "verificationStatus": "false",
   "sendOtpResp":{
-        "maskedMobile": "$IGNORE$",
         "sendOtpResTemplate":"resident/SendOTP/createSendOTPResultForPhone",
   "validateOtpResp":{
-        "maskedMobile": "$IGNORE$",
         "sendOtpResTemplate":"resident/SendOTP/createSendOTPResultForPhone"
     }
     }
@@ -438,17 +403,14 @@ GetChannelVerificationStatus:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-OTP-010",
-      "message": "$IGNORE$"
+      "errorCode": "RES-OTP-010"
     }
   ],
   "verificationStatus": false,
   "sendOtpResp":{
         "sendOtpResTemplate":"resident/SendOTP/createSendOTPResultForEmail",
-        "maskedEmail": "$IGNORE$",
   "validateOtpResp":{
-        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResultForEmail",
-        "maskedEmail": "$IGNORE$"
+        "sendOtpResTemplate":"resident/SendOTP/createSendOTPResultForEmail"
     }
     }
 }'

@@ -33,8 +33,7 @@ GetLatestIdSchema:
       output: '{
       "errors": [
 	    {
-	      "errorCode": "RES-SER-418",
-	      "message": "$IGNORE$"
+	      "errorCode": "RES-SER-418"
 	    }
   ]
 }'

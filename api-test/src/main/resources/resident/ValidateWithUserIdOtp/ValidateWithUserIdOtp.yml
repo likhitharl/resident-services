@@ -23,8 +23,7 @@ ValidateWithUserIdOtp:
       output: '{
        "errors": [
     {
-      "errorCode": "RES-SER-418",
-      "errorMessage": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ],
        "sendOtpResp":{
@@ -58,8 +57,7 @@ ValidateWithUserIdOtp:
       output: '{
        "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -93,8 +91,7 @@ ValidateWithUserIdOtp:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -164,8 +161,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -341,8 +337,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -376,8 +371,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -411,8 +405,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -446,8 +439,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -481,8 +473,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -516,8 +507,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -551,8 +541,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -586,8 +575,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -621,8 +609,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -656,8 +643,7 @@ ValidateWithUserIdOtp:
       output: '{
        "errors": [
     {
-      "errorCode": "RES-SER-418",
-      "errorMessage": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ],
        "sendOtpResp":{
@@ -691,8 +677,7 @@ ValidateWithUserIdOtp:
       output: '{
        "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -727,8 +712,7 @@ ValidateWithUserIdOtp:
       
        "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -975,8 +959,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -1010,8 +993,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -1045,8 +1027,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -1080,8 +1061,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -1115,8 +1095,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -1150,8 +1129,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -1185,8 +1163,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -1220,8 +1197,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{
@@ -1255,8 +1231,7 @@ ValidateWithUserIdOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ],
        "sendOtpResp":{

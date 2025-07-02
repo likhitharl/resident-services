@@ -43,8 +43,7 @@ PinStatus:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -63,8 +62,7 @@ PinStatus:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'

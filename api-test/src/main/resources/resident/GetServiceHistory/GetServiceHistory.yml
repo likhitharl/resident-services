@@ -47,8 +47,7 @@ GetServiceHistory:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -242,8 +241,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -271,8 +269,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -300,8 +297,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -329,8 +325,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -358,8 +353,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -387,8 +381,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -416,8 +409,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-447",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-447"
     }
   ]
 }'
@@ -445,8 +437,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -474,8 +465,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-447",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-447"
     }
   ]
 }'
@@ -503,8 +493,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -580,8 +569,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
 		    {
-		      "errorCode": "RES-SER-410",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-410"
 		    }
   ]
 }'
@@ -609,8 +597,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
 		    {
-		      "errorCode": "RES-SER-410",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-410"
 		    }
   ]
 }'
@@ -734,8 +721,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
 		    {
-		      "errorCode": "RES-SER-410",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-410"
 		    }
   ]
 }'
@@ -763,8 +749,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
 		    {
-		      "errorCode": "KER-ATH-401",
-		      "message": "$IGNORE$"
+		      "errorCode": "KER-ATH-401"
 		    }
   ]
 }'
@@ -816,8 +801,7 @@ GetServiceHistory:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -1011,8 +995,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -1040,8 +1023,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -1069,8 +1051,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -1098,8 +1079,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -1127,8 +1107,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -1156,8 +1135,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -1185,8 +1163,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-447",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-447"
     }
   ]
 }'
@@ -1214,8 +1191,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -1243,8 +1219,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-447",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-447"
     }
   ]
 }'
@@ -1272,8 +1247,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -1349,8 +1323,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
 		    {
-		      "errorCode": "RES-SER-410",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-410"
 		    }
   ]
 }'
@@ -1378,8 +1351,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
 		    {
-		      "errorCode": "RES-SER-410",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-410"
 		    }
   ]
 }'
@@ -1503,8 +1475,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
 		    {
-		      "errorCode": "RES-SER-410",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-410"
 		    }
   ]
 }'
@@ -1555,8 +1526,7 @@ GetServiceHistory:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -1750,8 +1720,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -1779,8 +1748,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -1808,8 +1776,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -1837,8 +1804,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -1866,8 +1832,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -1895,8 +1860,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -1924,8 +1888,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-447",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-447"
     }
   ]
 }'
@@ -1953,8 +1916,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -1982,8 +1944,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-447",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-447"
     }
   ]
 }'
@@ -2011,8 +1972,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -2088,8 +2048,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
 		    {
-		      "errorCode": "RES-SER-410",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-410"
 		    }
   ]
 }'
@@ -2117,8 +2076,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
 		    {
-		      "errorCode": "RES-SER-410",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-410"
 		    }
   ]
 }'
@@ -2220,8 +2178,7 @@ GetServiceHistory:
       output: '{
       	"errors": [
 		    {
-		      "errorCode": "RES-SER-410",
-		      "message": "$IGNORE$"
+		      "errorCode": "RES-SER-410"
 		    }
   ]
 }'

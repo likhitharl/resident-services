@@ -17,8 +17,6 @@ ReqAidOtp:
 		"aid": "$ID:UpdateUIN_Valid_All_Smoke_Pos_sid_registrationId$"
 }'
       output: '{
-	    "maskedMobile": "$IGNORE$",
-	    "maskedEmail": "$IGNORE$"
 }'
 
    Resident_ReqAidOtp_Invalid_IndividualId_Neg:
@@ -39,8 +37,7 @@ ReqAidOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -63,8 +60,7 @@ ReqAidOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -87,8 +83,7 @@ ReqAidOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -111,8 +106,7 @@ ReqAidOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -135,8 +129,7 @@ ReqAidOtp:
       output: '{
   "errors": [
     {
-      "errorCode": "IDA-MLC-009",
-      "message": "$IGNORE$"
+      "errorCode": "IDA-MLC-009"
     }
   ]
 }'

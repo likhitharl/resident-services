@@ -87,7 +87,6 @@ GenerateVIDNew:
         "vidType": "Perpetual"
     }'
       output: '{
-	    "maskedPhone": "$IGNORE$"
 }'
 
    Resident_Generate_Perpetual_VID_BothChannel_uin_Valid_Smoke_sid:
@@ -125,8 +124,7 @@ GenerateVIDNew:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -148,8 +146,7 @@ GenerateVIDNew:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -171,8 +168,7 @@ GenerateVIDNew:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -194,8 +190,7 @@ GenerateVIDNew:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -219,8 +214,7 @@ GenerateVIDNew:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -242,8 +236,7 @@ GenerateVIDNew:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -265,8 +258,7 @@ GenerateVIDNew:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -288,8 +280,7 @@ GenerateVIDNew:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-418",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-418"
     }
   ]
 }'
@@ -329,8 +320,7 @@ GenerateVIDNew:
       output: '{
       	"errors": [
     {
-      "errorCode": "KER-ATH-401",
-      "message": "$IGNORE$"
+      "errorCode": "KER-ATH-401"
     }
   ]
 }'
@@ -370,8 +360,7 @@ GenerateVIDNew:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-513",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-513"
     }
   ]
 }'
@@ -393,8 +382,7 @@ GenerateVIDNew:
       output: '{
   "errors": [
     {
-      "errorCode": "RES-SER-513",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-513"
     }
   ]
 }'
@@ -416,8 +404,7 @@ GenerateVIDNew:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-513",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-513"
     }
   ]
 }'
@@ -439,8 +426,7 @@ GenerateVIDNew:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -462,8 +448,7 @@ GenerateVIDNew:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -485,8 +470,7 @@ GenerateVIDNew:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -508,8 +492,7 @@ GenerateVIDNew:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-406",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-406"
     }
   ]
 }'
@@ -533,8 +516,7 @@ GenerateVIDNew:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -556,8 +538,7 @@ GenerateVIDNew:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -579,8 +560,7 @@ GenerateVIDNew:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-410",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-410"
     }
   ]
 }'
@@ -602,8 +582,7 @@ GenerateVIDNew:
       output: '{
       "errors": [
     {
-      "errorCode": "RES-SER-406",
-      "message": "$IGNORE$"
+      "errorCode": "RES-SER-406"
     }
   ]
 }'
