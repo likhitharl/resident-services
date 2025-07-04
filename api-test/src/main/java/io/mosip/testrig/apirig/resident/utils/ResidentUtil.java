@@ -10,6 +10,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.SkipException;
 
+import io.mosip.testrig.apirig.dbaccess.DBManager;
 import io.mosip.testrig.apirig.dto.TestCaseDTO;
 import io.mosip.testrig.apirig.resident.testrunner.MosipTestRunner;
 import io.mosip.testrig.apirig.testrunner.BaseTestCase;
@@ -41,34 +42,28 @@ public class ResidentUtil extends AdminTestUtil {
 
 		addTestCaseDetailsToMap(modifiedTestCaseName, testCaseDTO.getUniqueIdentifier());
 		
-		if (testCaseName.contains("ESignet_") && isCaptchaEnabled()) {
+		if (testCaseName.contains("ESignet_")
+				&& (ResidentConfigManager.isInServiceNotDeployedList(GlobalConstants.ESIGNET) || isCaptchaEnabled())) {
 			if (!MosipTestRunner.skipAll) {
 				MosipTestRunner.skipAll = true;
 			}
-		}		 
-		
+		}
+
 		if (MosipTestRunner.skipAll == true) {
-			GlobalMethods.reportCaptchaStatus(GlobalConstants.CAPTCHA_ENABLED, true);
-			throw new SkipException(GlobalConstants.CAPTCHA_ENABLED_MESSAGE);
-		} else {
-			GlobalMethods.reportCaptchaStatus(GlobalConstants.CAPTCHA_ENABLED, false);
+			if (ResidentConfigManager.isInServiceNotDeployedList(GlobalConstants.ESIGNET) == true) {
+				throw new SkipException(GlobalConstants.SERVICE_NOT_DEPLOYED);
+			} else if (isCaptchaEnabled() == true) {
+				GlobalMethods.reportCaptchaStatus(GlobalConstants.CAPTCHA_ENABLED, true);
+				throw new SkipException(GlobalConstants.CAPTCHA_ENABLED_MESSAGE);
+			} else {
+				GlobalMethods.reportCaptchaStatus(GlobalConstants.CAPTCHA_ENABLED, false);
+			}
 		}
 		
 		if (SkipTestCaseHandler.isTestCaseInSkippedList(testCaseName)) {
 			throw new SkipException(GlobalConstants.KNOWN_ISSUES);
 		}
 		
-		if ((ResidentConfigManager.isInServiceNotDeployedList(GlobalConstants.ESIGNET))
-				&& BaseTestCase.currentModule.equalsIgnoreCase("resident") && testCaseName.contains("_SignJWT_")) {
-			throw new SkipException("esignet module is not deployed");
-		}
-
-		if ((ResidentConfigManager.isInServiceNotDeployedList(GlobalConstants.ESIGNET))
-				&& BaseTestCase.currentModule.equalsIgnoreCase("resident")
-				&& (testCaseDTO.getRole() != null && (testCaseDTO.getRole().equalsIgnoreCase("residentNew")
-						|| testCaseDTO.getRole().equalsIgnoreCase("residentNewVid")))) {
-			throw new SkipException("esignet module is not deployed");
-		}
 		if (BaseTestCase.currentModule.equalsIgnoreCase(GlobalConstants.RESIDENT)) {
 			if (testCaseDTO.getRole() != null && (testCaseDTO.getRole().equalsIgnoreCase(GlobalConstants.RESIDENTNEW)
 					|| testCaseDTO.isValidityCheckRequired())) {
@@ -90,6 +85,22 @@ public class ResidentUtil extends AdminTestUtil {
 		}
 		
 		return testCaseName;
+	}
+	
+	public static void dbCleanUp() {
+		DBManager.executeDBQueries(ResidentConfigManager.getKMDbUrl(), ResidentConfigManager.getKMDbUser(),
+				ResidentConfigManager.getKMDbPass(), ResidentConfigManager.getKMDbSchema(),
+				getGlobalResourcePath() + "/" + "config/keyManagerCertDataDeleteQueries.txt");
+		DBManager.executeDBQueries(ResidentConfigManager.getIdaDbUrl(), ResidentConfigManager.getIdaDbUser(),
+				ResidentConfigManager.getPMSDbPass(), ResidentConfigManager.getIdaDbSchema(),
+				getGlobalResourcePath() + "/" + "config/idaCertDataDeleteQueries.txt");
+		DBManager.executeDBQueries(ResidentConfigManager.getMASTERDbUrl(), ResidentConfigManager.getMasterDbUser(),
+				ResidentConfigManager.getMasterDbPass(), ResidentConfigManager.getMasterDbSchema(),
+				getGlobalResourcePath() + "/" + "config/masterDataCertDataDeleteQueries.txt");
+
+		DBManager.executeDBQueries(ResidentConfigManager.getIdRepoDbUrl(), ResidentConfigManager.getIdRepoDbUser(),
+				ResidentConfigManager.getPMSDbPass(), "idrepo",
+				getGlobalResourcePath() + "/" + "config/idrepoCertDataDeleteQueries.txt");
 	}
 	
 	public static String inputstringKeyWordHandeler(String jsonString, String testCaseName) {
