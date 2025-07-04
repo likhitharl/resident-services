@@ -87,6 +87,7 @@ public class MosipTestRunner {
 			suiteSetup(getRunType());
 			SkipTestCaseHandler.loadTestcaseToBeSkippedList("testCaseSkippedList.txt");
 			GlobalMethods.setModuleNameAndReCompilePattern(ResidentConfigManager.getproperty("moduleNamePattern"));
+			GlobalMethods.reportCaptchaStatus(GlobalConstants.CAPTCHA_ENABLED, false);
 			setLogLevels();
 
 			HealthChecker healthcheck = new HealthChecker();
@@ -94,7 +95,6 @@ public class MosipTestRunner {
 			Thread trigger = new Thread(healthcheck);
 			trigger.start();
 			
-			ResidentUtil.dbCleanUp();
 			KeycloakUserManager.removeUser();
 			KeycloakUserManager.createUsers();
 			KeycloakUserManager.closeKeycloakInstance();
