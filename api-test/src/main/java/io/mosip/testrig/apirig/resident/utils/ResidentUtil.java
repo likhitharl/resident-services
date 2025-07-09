@@ -43,7 +43,7 @@ public class ResidentUtil extends AdminTestUtil {
 		addTestCaseDetailsToMap(modifiedTestCaseName, testCaseDTO.getUniqueIdentifier());
 		
 		if (testCaseName.contains("ESignet_")
-				&& (ResidentConfigManager.isInServiceNotDeployedList(GlobalConstants.ESIGNET) || isCaptchaEnabled())) {
+				&& (ResidentConfigManager.isInServiceNotDeployedList(GlobalConstants.ESIGNET))) {
 			if (!MosipTestRunner.skipAll) {
 				MosipTestRunner.skipAll = true;
 			}
@@ -52,9 +52,10 @@ public class ResidentUtil extends AdminTestUtil {
 		if (MosipTestRunner.skipAll == true) {
 			if (ResidentConfigManager.isInServiceNotDeployedList(GlobalConstants.ESIGNET) == true) {
 				throw new SkipException(GlobalConstants.SERVICE_NOT_DEPLOYED);
-			} else if (isCaptchaEnabled() == true) {
-				GlobalMethods.reportCaptchaStatus(GlobalConstants.CAPTCHA_ENABLED, true);
-				throw new SkipException(GlobalConstants.CAPTCHA_ENABLED_MESSAGE);
+				  } else if (isCaptchaEnabled() == true) {
+				  GlobalMethods.reportCaptchaStatus(GlobalConstants.CAPTCHA_ENABLED, true);
+				  throw new SkipException(GlobalConstants.CAPTCHA_ENABLED_MESSAGE);
+				 
 			} 
 		}
 		
@@ -151,44 +152,6 @@ public class ResidentUtil extends AdminTestUtil {
 			return jsonString.replace(keyword, value);
 		else
 			throw new SkipException("Marking testcase as skipped as required fields are empty " + keyword);
-	}
-	
-	public static JSONArray esignetActuatorResponseArray = null;
-
-	public static String getValueFromEsignetActuator(String section, String key) {
-		String url = ResidentConfigManager.getEsignetBaseUrl() + ResidentConfigManager.getproperty("actuatorEsignetEndpoint");
-		String actuatorCacheKey = url + section + key;
-		String value = actuatorValueCache.get(actuatorCacheKey);
-		if (value != null && !value.isEmpty())
-			return value;
-
-		try {
-			if (esignetActuatorResponseArray == null) {
-				Response response = null;
-				JSONObject responseJson = null;
-				response = RestClient.getRequest(url, MediaType.APPLICATION_JSON, MediaType.APPLICATION_JSON);
-				responseJson = new JSONObject(response.getBody().asString());
-				esignetActuatorResponseArray = responseJson.getJSONArray("propertySources");
-			}
-
-			for (int i = 0, size = esignetActuatorResponseArray.length(); i < size; i++) {
-				JSONObject eachJson = esignetActuatorResponseArray.getJSONObject(i);
-				if (eachJson.get("name").toString().contains(section)) {
-					value = eachJson.getJSONObject(GlobalConstants.PROPERTIES).getJSONObject(key)
-							.get(GlobalConstants.VALUE).toString();
-					if (ResidentConfigManager.IsDebugEnabled())
-						logger.info("Actuator: " + url + " key: " + key + " value: " + value);
-					break;
-				}
-			}
-			actuatorValueCache.put(actuatorCacheKey, value);
-
-			return value;
-		} catch (Exception e) {
-			logger.error(GlobalConstants.EXCEPTION_STRING_2 + e);
-			return value;
-		}
-
 	}
 	
 	public static JSONArray configActuatorResponseArray = null;
