@@ -43,7 +43,7 @@ public class ResidentUtil extends AdminTestUtil {
 		addTestCaseDetailsToMap(modifiedTestCaseName, testCaseDTO.getUniqueIdentifier());
 		
 		if (testCaseName.contains("ESignet_")
-				&& (ResidentConfigManager.isInServiceNotDeployedList(GlobalConstants.ESIGNET))) {
+				&& (ResidentConfigManager.isInServiceNotDeployedList(GlobalConstants.ESIGNET) || isCaptchaEnabled())) {
 			if (!MosipTestRunner.skipAll) {
 				MosipTestRunner.skipAll = true;
 			}
