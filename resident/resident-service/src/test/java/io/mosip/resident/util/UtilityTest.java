@@ -10,6 +10,7 @@ import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.times;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -77,10 +78,13 @@ import io.mosip.kernel.core.pdfgenerator.spi.PDFGenerator;
 import io.mosip.kernel.core.util.HMACUtils2;
 import io.mosip.kernel.openid.bridge.api.constants.AuthErrorCode;
 import io.mosip.kernel.signature.dto.SignatureResponseDto;
+
 import io.mosip.resident.constant.ApiName;
 import io.mosip.resident.constant.RequestType;
 import io.mosip.resident.constant.ResidentConstants;
 import io.mosip.resident.constant.ResidentErrorCode;
+import io.mosip.resident.constant.EventStatusInProgress;
+
 import io.mosip.resident.dto.DynamicFieldCodeValueDTO;
 import io.mosip.resident.dto.DynamicFieldConsolidateResponseDto;
 import io.mosip.resident.dto.IdRepoResponseDto;
@@ -1426,5 +1430,24 @@ public class UtilityTest {
 		when(env.getProperty(anyString())).thenReturn("pdf logo");
 		String logoData = utility.getPDFHeaderLogo();
 		assertNotNull(logoData);
+	}
+
+	@Test
+	public void testSaveEntity_shouldInvokeRepositorySave() {
+
+		ResidentTransactionEntity entity = new ResidentTransactionEntity();
+		utility.saveEntity(entity);
+
+		verify(residentTransactionRepository, times(1)).save(entity);
+	}
+
+	@Test
+	public void testUpdateEntity_shouldInvokeRepositoryUpdate() {
+
+		ResidentTransactionEntity entity = new ResidentTransactionEntity();
+		utility.updateEntity(EventStatusInProgress.IDENTITY_UPDATED.name(), EventStatusInProgress.IDENTITY_UPDATED.name(), false,
+				"Packet processed in Regproc with status code", entity);
+
+		verify(residentTransactionRepository, times(1)).save(entity);
 	}
 }
