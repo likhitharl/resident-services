@@ -24,7 +24,7 @@ import static org.mockito.Mockito.when;
 public class UinVidValidatorTest {
 
     @InjectMocks
-    private UinVidValidator uinVidValidator = new UinVidValidator();
+    private UinVidValidator uinVidValidator;
 
     @Mock
     private UinValidator<String> uinValidator;
