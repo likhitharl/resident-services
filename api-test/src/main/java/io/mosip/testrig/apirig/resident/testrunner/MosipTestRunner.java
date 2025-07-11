@@ -87,6 +87,7 @@ public class MosipTestRunner {
 			suiteSetup(getRunType());
 			SkipTestCaseHandler.loadTestcaseToBeSkippedList("testCaseSkippedList.txt");
 			GlobalMethods.setModuleNameAndReCompilePattern(ResidentConfigManager.getproperty("moduleNamePattern"));
+			GlobalMethods.reportCaptchaStatus(GlobalConstants.CAPTCHA_ENABLED, false);
 			setLogLevels();
 
 			HealthChecker healthcheck = new HealthChecker();
@@ -115,6 +116,7 @@ public class MosipTestRunner {
 			LOGGER.error("Exception " + e.getMessage());
 		}
 		
+		ResidentUtil.dbCleanUp();
 		KeycloakUserManager.removeUser();
 		KeycloakUserManager.closeKeycloakInstance();
 
@@ -142,19 +144,7 @@ public class MosipTestRunner {
 		}
 		BaseTestCase.currentModule = GlobalConstants.RESIDENT;
 		BaseTestCase.certsForModule = GlobalConstants.RESIDENT;
-		DBManager.executeDBQueries(ResidentConfigManager.getKMDbUrl(), ResidentConfigManager.getKMDbUser(),
-				ResidentConfigManager.getKMDbPass(), ResidentConfigManager.getKMDbSchema(),
-				getGlobalResourcePath() + "/" + "config/keyManagerCertDataDeleteQueries.txt");
-		DBManager.executeDBQueries(ResidentConfigManager.getIdaDbUrl(), ResidentConfigManager.getIdaDbUser(),
-				ResidentConfigManager.getPMSDbPass(), ResidentConfigManager.getIdaDbSchema(),
-				getGlobalResourcePath() + "/" + "config/idaCertDataDeleteQueries.txt");
-		DBManager.executeDBQueries(ResidentConfigManager.getMASTERDbUrl(), ResidentConfigManager.getMasterDbUser(),
-				ResidentConfigManager.getMasterDbPass(), ResidentConfigManager.getMasterDbSchema(),
-				getGlobalResourcePath() + "/" + "config/masterDataCertDataDeleteQueries.txt");
-
-		DBManager.executeDBQueries(ResidentConfigManager.getIdRepoDbUrl(), ResidentConfigManager.getIdRepoDbUser(),
-				ResidentConfigManager.getPMSDbPass(), "idrepo",
-				getGlobalResourcePath() + "/" + "config/idrepoCertDataDeleteQueries.txt");
+		ResidentUtil.dbCleanUp();
 		AdminTestUtil.copyResidentTestResource();
 		BaseTestCase.otpListener = new OTPListener();
 		BaseTestCase.otpListener.run();
