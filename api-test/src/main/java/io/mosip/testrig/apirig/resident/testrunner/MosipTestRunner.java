@@ -10,9 +10,7 @@ import java.security.NoSuchAlgorithmException;
 import java.security.PublicKey;
 import java.security.interfaces.RSAPublicKey;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 import java.util.Properties;
 
 import org.apache.log4j.Level;
@@ -25,7 +23,6 @@ import com.nimbusds.jose.jwk.RSAKey;
 
 import io.mosip.testrig.apirig.dataprovider.BiometricDataProvider;
 import io.mosip.testrig.apirig.dbaccess.DBManager;
-import io.mosip.testrig.apirig.report.EmailableReport;
 import io.mosip.testrig.apirig.resident.utils.ResidentConfigManager;
 import io.mosip.testrig.apirig.resident.utils.ResidentUtil;
 import io.mosip.testrig.apirig.testrunner.BaseTestCase;
@@ -68,9 +65,7 @@ public class MosipTestRunner {
 	 * @param arg
 	 */
 	public static void main(String[] arg) {
-		// Set execution elapse timeout to 1.5 hour
-		Watchdog watchdog = new Watchdog(90 * 60 * 1000L);
-		watchdog.start();
+		Watchdog watchdog = null;
 
 		try {
 			LOGGER.info("** ------------- API Test Rig Run Started --------------------------------------------- **");
@@ -85,6 +80,20 @@ public class MosipTestRunner {
 			}
 			AdminTestUtil.init();
 			ResidentConfigManager.init();
+			
+			// Read timeout from properties, fallback to 120 if not set which is 2 hours with buffer timing
+			String timeoutStr = ResidentConfigManager.getproperty("watchdogTimeoutMinutes");
+			long timeoutMinutes = 120; // default
+			if (timeoutStr != null && !timeoutStr.isBlank()) {
+				try {
+					timeoutMinutes = Long.parseLong(timeoutStr);
+				} catch (NumberFormatException e) {
+					LOGGER.warn("Invalid watchdogTimeoutMinutes property: " + timeoutStr + ", using default: 120");
+				}
+			}
+			watchdog = new Watchdog(timeoutMinutes * 60 * 1000L);
+			watchdog.start();
+			
 			suiteSetup(getRunType());
 			SkipTestCaseHandler.loadTestcaseToBeSkippedList("testCaseSkippedList.txt");
 			GlobalMethods.setModuleNameAndReCompilePattern(ResidentConfigManager.getproperty("moduleNamePattern"));
@@ -106,8 +115,6 @@ public class MosipTestRunner {
 
 			// Generate device certificates to be consumed by Mock-MDS
 			PartnerRegistration.deleteCertificates();
-			AdminTestUtil.createAndPublishPolicy();
-			AdminTestUtil.createEditAndPublishPolicy();
 			PartnerRegistration.deviceGeneration();
 
 			BiometricDataProvider.generateBiometricTestData("Registration");
@@ -153,8 +160,8 @@ public class MosipTestRunner {
 		if (!runType.equalsIgnoreCase("JAR")) {
 			AuthTestsUtil.removeOldMosipTempTestResource();
 		}
-		BaseTestCase.currentModule = GlobalConstants.RESIDENT;
-		BaseTestCase.certsForModule = GlobalConstants.RESIDENT;
+		BaseTestCase.currentModule = BaseTestCase.runContext + GlobalConstants.RESIDENT;
+		BaseTestCase.certsForModule = BaseTestCase.runContext + GlobalConstants.RESIDENT;
 		ResidentUtil.dbCleanUp();
 		AdminTestUtil.copyResidentTestResource();
 		BaseTestCase.otpListener = new OTPListener();
