@@ -22,6 +22,7 @@ import io.mosip.resident.util.Utility;
 import io.mosip.resident.validator.RequestValidator;
 import reactor.util.function.Tuple2;
 import reactor.util.function.Tuples;
+import io.mosip.resident.constant.RegistrationConstants;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -97,6 +98,8 @@ public class IdentityServiceImpl implements IdentityService {
 	@Autowired
     private Utilities  utilities;
 
+	private List<String> nameValueList;
+
 	private static final Logger logger = LoggerConfiguration.logConfig(IdentityServiceImpl.class);
 	
 	@Override
@@ -123,8 +126,7 @@ public class IdentityServiceImpl implements IdentityService {
 				LocalDate localDate=LocalDate.parse(dateOfBirth, formatter);
 				identityDTO.setYearOfBirth(Integer.toString(localDate.getYear()));
 			}
-			String name = utility.getMappingValue(identity, ResidentConstants.NAME, langCode);
-			identityDTO.setFullName(name);
+			identityDTO.setFullName(getFullName(identity, langCode));
 			identityDTO.putAll((Map<? extends String, ? extends Object>) identity.get(IDENTITY));
 
 			if(fetchFace) {
@@ -144,7 +146,44 @@ public class IdentityServiceImpl implements IdentityService {
 		logger.debug("IdentityServiceImpl::getIdentity()::exit");
 		return identityDTO;
 	}
-	
+
+	public String getFullName(Map<String, Object> identity, String langCode)
+			throws ResidentServiceCheckedException, IOException {
+		if (nameValueList == null) {
+			nameValueList = utility.getNameValueFromIdentityMapping();
+		}
+		return nameValueList.stream()
+				.map(nameString -> getValueFromIdentityMapping(nameString, identity, langCode))
+				.collect(Collectors.joining(RegistrationConstants.SPACE));
+	}
+
+
+	private String getValueFromIdentityMapping(String nameString, Map<String, Object> identity, String langCode) {
+		if (nameString == null || identity == null || langCode == null) {
+			return ""; // Return early if any input is null
+		}
+
+		// Retrieve the identity value map
+		Map<String, Object> identityValueMap = (Map<String, Object>) identity.get(IDENTITY);
+		if (identityValueMap == null) {
+			return ""; // Return early if identity map is null
+		}
+
+		// Retrieve the list of nameValueMap
+		List<Map<String, Object>> nameValueMap = (List<Map<String, Object>>) identityValueMap.get(nameString);
+		if (nameValueMap == null) {
+			return ""; // Return early if the nameValueMap is null
+		}
+
+		// Use stream to find the matching language and return the corresponding value
+		return nameValueMap.stream()
+				.filter(nameMap -> langCode.equalsIgnoreCase((String) nameMap.get(ResidentConstants.LANGUAGE)))
+				.map(nameMap -> (String) nameMap.get(ResidentConstants.VALUE))
+				.findFirst() // Get the first matching value
+				.orElse(""); // Return an empty string if no match is found
+	}
+
+
 	@Override
 	public Map<String, Object> getIdentityAttributes(String id, String schemaType) throws ResidentServiceCheckedException, IOException {
 		return getIdentityAttributes(id, schemaType, List.of(
